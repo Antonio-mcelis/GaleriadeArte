@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="EstiloArte.css">
+</head>
+<body>
+<header>
+    <h1>Contacta con Nosotros</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Información de Contacto</h2>
+    <p>Puedes ponerte en contacto con nosotros a través de:</p>
+    <ul>
+        <li>Email: galeria@ciisa.cl</li>
+        <li>Teléfono: +56945406546</li>
+        <li>Dirección: Reino unido 398, Santiago</li>
+    </ul>
+    <h2>Formulario de Contacto</h2>
+    <form action="enviar.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="tipo_solicitud">Tipo de solicitud:</label><br>
+        <select id="tipo_solicitud" name="tipo_solicitud" required>
+            <option value="Compra">Compra</option>
+            <option value="Consulta">Consulta</option>
+            <option value="Venta">Venta</option>
+        </select><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</main>
+<footer>
+    <p>Derechos de autor &copy; 2024 Galería de Arte</p>
+</footer>
+</body>
+</html>
